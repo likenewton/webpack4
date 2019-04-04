@@ -139,8 +139,8 @@ module.exports = {
     historyApiFallback: true,
     compress: true,
     hot: true,
-    port: 8760,
-    host: '192.168.50.120'
+    port: 8765,
+    host: '127.0.0.1'
   },
 
   plugins: getPlugins('./app/pages')

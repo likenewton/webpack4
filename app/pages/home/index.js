@@ -16,7 +16,7 @@ class Home {
 
   render() {
     // text前加#号可以渲染html
-    $('.jq').html(template.compile(`{{#text}}`)({
+    $('.jq').html(template.compile(`{{@text}}`)({
       text: `<p class="ellipsis">我是通过jq注入进来的 by webpackVersion : ${this.data.webpackVersion}</p>`
     }))
   }
