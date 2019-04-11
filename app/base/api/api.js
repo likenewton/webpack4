@@ -1,7 +1,6 @@
 // 每个页面都会执行的函数
 // rem 布局
 let REM = function(win) {
-  console.log(win)
   let winDoc = win.document
   let winDocDoc = winDoc.documentElement
   let psdW = 750 / 100
@@ -23,6 +22,8 @@ import Units from './units.js' // 工具类函数
 import STATIC from './static.js' // 静态函数
 import $ from 'jquery/dist/jquery.min' // 工具
 import template from 'art-template/lib/template-web.js' // 模板引擎
+
+template.defaults.escape = false // escape = false容易遭受XSS攻击
 
 module.exports = {
   $,

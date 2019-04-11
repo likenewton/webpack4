@@ -54,7 +54,7 @@ function getPlugins(viewPath) {
     }])
   ]
 
-  return pluginMap;
+  return pluginMap
 }
 
 module.exports = {
@@ -94,7 +94,7 @@ module.exports = {
       },
 
       {
-        test: /\.html$/,
+        test: /\.(html|tpl)$/,
         use: 'html-loader'
       },
 
