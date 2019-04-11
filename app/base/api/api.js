@@ -19,7 +19,7 @@ REM(window)
 // 以下注入页面通用依赖
 import '../style/base.scss' // 基础样式表
 import Units from './units.js' // 工具类函数
-import STATIC from './static.js' // 静态函数
+import STATIC from './static.js' // 静态数据
 import $ from 'jquery/dist/jquery.min' // 工具
 import template from 'art-template/lib/template-web.js' // 模板引擎
 
