@@ -41,9 +41,8 @@ class Home {
   addEvent() {
     $('button').click(() => {
       popup.confirm({
-        body: `{{each data as item}}<p>name: {{item.name}}, age: {{item.age}}</p>{{/each}}`,
-        tplData: this.data.list,
-        type: 'TIP'
+        body: `{{each data item}}<p>name: {{item.name}}, age: {{item.age}}</p>{{/each}}`,
+        tplData: this.data.list
       })
     })
   }
