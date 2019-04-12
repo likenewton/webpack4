@@ -26,6 +26,7 @@ class Home {
       }]
     }
 
+    this._fn()
     this.render()
     this.addEvent()
   }
@@ -45,6 +46,23 @@ class Home {
         tplData: this.data.list
       })
     })
+
+    $('.js-setcookie').click(() => {
+      this.fn.setCookie({
+        key: 'the_cookie',
+        value: 'the_value'
+      })
+    })
+  }
+
+  _fn() {
+    this.fn = {
+      setCookie(para) {
+        if (para.key && para.value) {
+          document.cookie = `${para.key}=${para.value}`
+        }
+      }
+    }
   }
 
   static Init() {
