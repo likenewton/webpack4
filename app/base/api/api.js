@@ -23,6 +23,8 @@ import STATIC from './static.js' // 静态数据
 import $ from 'jquery/dist/jquery.min' // 工具
 import template from 'art-template/lib/template-web.js' // 模板引擎
 
+template.defaults.escape = false // escape = false容易遭受XSS攻击
+
 module.exports = {
   $,
   Units,
