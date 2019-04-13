@@ -51,7 +51,11 @@ function getPlugins(viewPath) {
     new CopyWebpackPlugin([{
       from: resolve(__dirname, 'app/assets/static'),
       to: resolve(__dirname, 'dist/static'),
-    }])
+    }]),
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery"
+    })
   ]
 
   return pluginMap;
