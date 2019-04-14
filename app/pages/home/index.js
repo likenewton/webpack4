@@ -1,4 +1,4 @@
-import { $, Units, STATIC, template } from '../../base/api/api.js'
+import { Units, STATIC, template } from '../../base/api/api.js'
 import { Popup } from '../../components'
 import './style.scss'
 
@@ -40,7 +40,7 @@ class Home {
   }
 
   addEvent() {
-    $('button').click(() => {
+    $('#popup').click(() => {
       popup.confirm({
         body: `{{each data item}}<p>name: {{item.name}}, age: {{item.age}}</p>{{/each}}`,
         tplData: this.data.list
